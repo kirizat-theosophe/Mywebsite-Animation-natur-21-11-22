@@ -1,0 +1,155 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.box1
+{
+    height: 35%;
+    background: lightskyblue;
+}
+.box2
+{
+    height: 25%;
+    background: darkgreen;
+}
+
+.box3
+{
+    height: 40%;
+    background: #807f7e;
+    box-sizing: border-box;
+    border-top: 10px solid #807f7e;
+    border-bottom: 10px solid #d2dbbf;
+    width: 100%;
+}
+#text{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+
+    font-size: 5vw;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+}
+.line{
+    box-sizing: border-box;
+    border: 5px dashed rgb(187, 208, 238);
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+}
+.cycle
+{
+    position: absolute;
+    top:50%;
+    left: 0;
+    animation-name:move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.buss
+{
+    position: absolute;
+    top:80%;
+    left: 0;
+    animation-name:move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.white{
+    position: absolute;
+    top:60%;
+    left: 0;
+    animation-name:move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.red{
+    position: absolute;
+    top:55%;
+    left: 0;
+    animation-name:move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.box1 img {
+    width:100%;
+}
+.box1 .cloud1 {
+    position: absolute;
+    top: 60px;
+    animation:cloudOne infinite 30s linear;
+}
+.box1 .cloud2 {
+    position: absolute;
+    top: -57px;
+    animation:cloudTwo infinite 40s linear;
+}
+.box1 .fly
+{
+    position: absolute;
+    top: 70px;
+    animation:fly1 infinite 50s linear;
+}
+.hest{
+    position: absolute;
+    top: 250px;
+    animation: hest infinite 100s linear;
+}
+
+@keyframes move
+{
+from{
+        transform: translateX(-100px)
+    }
+    to{
+        transform: translateX(1500px)
+    }
+}
+
+@keyframes cloudOne
+{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes cloudTwo
+{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes fly1
+{
+from{
+        transform: translateX(-100px)
+    }
+    to{
+        transform: translateX(1500px)
+    }
+}
+@keyframes hest
+{
+from{
+        transform: translateX(-100px)
+    }
+    to{
+        transform: translateX(1500px)
+    }
+}

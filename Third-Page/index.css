@@ -1,0 +1,64 @@
+*, h1, h2 {
+    margin: 0;
+    box-sizing: border-box;    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+h5{
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 1000;
+    animation: heading; 
+    letter-spacing: 0.2rem;
+    color: white;
+}
+h4{
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 1000;
+    animation: heading; 
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+@keyframes heading{
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.para {
+    min-height: 100vh;    
+    background-position: center top;
+    background-size: cover;  
+    
+    background-attachment: fixed;  
+}
+
+.p1 {
+    background-image: url("./img/co21.jpg");   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+.p2 {
+    background-image: url("./img/kollektivt.jpg");
+}
+
+.part2 {
+    min-height: 100vh;
+}
+
+.c1 {
+    min-height: 40vh;
+}
+.c2 {
+    min-height: 50vh;
+}
